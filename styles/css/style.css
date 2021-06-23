@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.navbar_logo, .navbar_menu, .navbar_menu_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar {
+  background: #124563;
+  color: #e7f5f8;
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.navbar_logo {
+  color: #e7f5f8;
+  font-size: 30px;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+.navbar_bars {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar_bars {
+    color: #e7f5f8;
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.navbar_menu {
+  font-size: 20px;
+  margin-right: 24px;
+}
+
+.navbar_menu_links {
+  color: #e7f5f8;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar_menu_links {
+    display: none;
+  }
+}
+
+.navbar_menu_links:hover {
+  background-color: #e7f5f8;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #124563;
+  border-radius: 5px;
+  padding: .5rem;
+}
+
+.img {
+  width: 100%;
+  height: 70vh;
+}
+
+.img_width {
+  background-image: url("https://www.ltts.com/sites/default/files/styles/ltts_blog_image/public/blogs/2019-02/End-to-End-Software-Defined-Networking-%28SDN%29-Solutions-for-Manufacturing-NFV.jpg?itok=ih9cMhV7");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
+
+.home_text {
+  width: auto;
+  height: 30vh;
+  color: #124563;
+  text-align: center;
+}
+
+.home_text h1 {
+  margin-top: 40px;
+  font-size: 40px;
+}
+
+.home_text p {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #124563;
+}
+
+.body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+.body .container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  -webkit-box-shadow: inset 5px 5px 5px rgba(9, 61, 163, 0.2), inset -5px -5px 15px #7489b4, 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 5px 5px 5px rgba(9, 61, 163, 0.2), inset -5px -5px 15px #7489b4, 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.body .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #08618a;
+  border: 2px solid #0876a1;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 20px 50px rgba(2, 14, 78, 0.5);
+          box-shadow: 0 20px 50px rgba(2, 14, 78, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .container .card .box:hover {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-box-shadow: 0 40px 70px rgba(2, 14, 78, 0.5);
+          box-shadow: 0 40px 70px rgba(2, 14, 78, 0.5);
+}
+
+.body .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.body .container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(18, 69, 99, 0.2);
+}
+
+.body .container .card .box .content h3 {
+  font-size: 2em;
+  color: #e7f5f8;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.body .container .card .box .content p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 10px;
+  color: #e7f5f8;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.body .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #e7f5f8;
+  margin-top: 15px;
+  padding: 8px 20px;
+  background: #124563;
+  font-size: 25px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.body .container .card .box:nth-child(1) {
+  background: #03a086;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

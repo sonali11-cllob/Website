@@ -1,0 +1,29 @@
+@import './colors';
+@import './media-queries';
+
+.img{
+    width: 100%;
+    height: 70vh;
+
+    &_width{
+        background-image: url("https://www.ltts.com/sites/default/files/styles/ltts_blog_image/public/blogs/2019-02/End-to-End-Software-Defined-Networking-%28SDN%29-Solutions-for-Manufacturing-NFV.jpg?itok=ih9cMhV7");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 70vh;
+    }
+}
+.home_text{
+    width: auto;
+    height: 30vh;
+    color: $navbg;
+    text-align: center;
+
+    h1{
+        margin-top: 40px;
+        font-size: 40px;
+    }
+    p{
+        font-size: 25px;
+        margin-top: 30px;
+    }
+}
